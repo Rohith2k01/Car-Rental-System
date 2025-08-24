@@ -1,0 +1,135 @@
+.admin-cars-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.admin-cars-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.admin-no-cars {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.admin-car-card {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.admin-car-card:hover {
+  transform: translateY(-3px);
+}
+
+.admin-car-image {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.admin-car-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-car-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  border: 1px solid;
+}
+
+.approved {
+  color: green;
+  background-color: #e0f8e0;
+  border-color: green;
+}
+
+.not-approved {
+  color: red;
+  background-color: #fce4e4;
+  border-color: red;
+}
+
+.available {
+  color: green;
+  background-color: #e0f8e0;
+  border-color: green;
+}
+
+.not-available {
+  color: red;
+  background-color: #fce4e4;
+  border-color: red;
+}
+
+.toggle-btn {
+  margin-left: 12px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.make-available {
+  background-color: green;
+}
+
+.make-available:hover {
+  background-color: #0f8f0f;
+}
+
+.make-unavailable {
+  background-color: #dc3545;
+}
+
+.make-unavailable:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .admin-car-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-car-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .admin-car-details {
+    align-items: center;
+    text-align: center;
+  }
+}

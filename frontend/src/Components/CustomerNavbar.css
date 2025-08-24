@@ -1,0 +1,64 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left h1 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #fca311;
+}
+
+.logout-link {
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout-link:hover {
+  color: #fca311;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+

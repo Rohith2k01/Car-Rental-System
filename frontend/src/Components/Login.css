@@ -1,0 +1,104 @@
+.main-section-login {
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(to right, #e0eafc, #cfdef3); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inner-login {
+  width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #6b6b6b;
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); */
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-login h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.input-main-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-main-login label {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-main-login input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-main-login input:focus {
+  border-color: #0d1b2a;
+  box-shadow: 0 0 4px rgba(0, 119, 255, 0.2);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #0d1b2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: #13283f;
+  transform: translateY(-2px);
+}
+
+
+
+
+.login-link {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f8ff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #d0e6f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.login-link:hover {
+  color: #0d1b2a;
+  background-color: #e3f2fd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+}
+
+

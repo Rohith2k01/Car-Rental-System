@@ -1,0 +1,118 @@
+.main-cart-sec {
+  padding: 60px 4%;
+  background-color: #f9f9f9;
+}
+
+.cart-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.cart-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cart-card-flex {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-card-flex:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.cart-img-flex {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.car-details-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.car-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+}
+
+
+
+.vendor-details {
+  font-size: 0.95rem;
+  /* color: #555; */
+  line-height: 1.5;
+}
+
+.car-price {
+  font-size: 1rem;
+  color: #111;
+  margin-top: 10px;
+}
+
+.starting-from {
+  font-size: 0.85rem;
+  color: #777;
+  display: block;
+}
+
+.cart-btn {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .cart-card-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-img-flex {
+    width: 100%;
+    height: 240px;
+  }
+
+  .car-details-box {
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .car-icons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
